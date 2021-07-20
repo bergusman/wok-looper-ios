@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		ADA591C926A6D96400CE59E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591C826A6D96400CE59E2 /* AppDelegate.swift */; };
-		ADA591CB26A6D96400CE59E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591CA26A6D96400CE59E2 /* SceneDelegate.swift */; };
-		ADA591CD26A6D96400CE59E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591CC26A6D96400CE59E2 /* ViewController.swift */; };
-		ADA591D026A6D96400CE59E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA591CE26A6D96400CE59E2 /* Main.storyboard */; };
 		ADA591D226A6D96600CE59E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA591D126A6D96600CE59E2 /* Assets.xcassets */; };
 		ADA591D526A6D96600CE59E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA591D326A6D96600CE59E2 /* LaunchScreen.storyboard */; };
+		ADA591E726A6DB4900CE59E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591E526A6DB4900CE59E2 /* HomeViewController.swift */; };
+		ADA591E826A6DB4900CE59E2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA591E626A6DB4900CE59E2 /* HomeViewController.xib */; };
+		ADA591EB26A6DC5D00CE59E2 /* VideoLooperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591EA26A6DC5D00CE59E2 /* VideoLooperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADA591C526A6D96400CE59E2 /* Looper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Looper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA591C826A6D96400CE59E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADA591CA26A6D96400CE59E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADA591CC26A6D96400CE59E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADA591CF26A6D96400CE59E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADA591D126A6D96600CE59E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA591D426A6D96600CE59E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADA591D626A6D96600CE59E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA591E526A6DB4900CE59E2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ADA591E626A6DB4900CE59E2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		ADA591EA26A6DC5D00CE59E2 /* VideoLooperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLooperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,63 @@
 		ADA591C726A6D96400CE59E2 /* Looper */ = {
 			isa = PBXGroup;
 			children = (
-				ADA591C826A6D96400CE59E2 /* AppDelegate.swift */,
-				ADA591CA26A6D96400CE59E2 /* SceneDelegate.swift */,
-				ADA591CC26A6D96400CE59E2 /* ViewController.swift */,
-				ADA591CE26A6D96400CE59E2 /* Main.storyboard */,
-				ADA591D126A6D96600CE59E2 /* Assets.xcassets */,
-				ADA591D326A6D96600CE59E2 /* LaunchScreen.storyboard */,
-				ADA591D626A6D96600CE59E2 /* Info.plist */,
+				ADA591DD26A6DAB700CE59E2 /* Sources */,
+				ADA591DF26A6DAC700CE59E2 /* Resources */,
+				ADA591E026A6DACE00CE59E2 /* Others */,
 			);
 			path = Looper;
+			sourceTree = "<group>";
+		};
+		ADA591DD26A6DAB700CE59E2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591E126A6DAD900CE59E2 /* Views & Controllers */,
+				ADA591C826A6D96400CE59E2 /* AppDelegate.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		ADA591DF26A6DAC700CE59E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591D326A6D96600CE59E2 /* LaunchScreen.storyboard */,
+				ADA591D126A6D96600CE59E2 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADA591E026A6DACE00CE59E2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591D626A6D96600CE59E2 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		ADA591E126A6DAD900CE59E2 /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591E426A6DB3A00CE59E2 /* Views */,
+				ADA591E326A6DB3500CE59E2 /* Home */,
+			);
+			name = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+		ADA591E326A6DB3500CE59E2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591E526A6DB4900CE59E2 /* HomeViewController.swift */,
+				ADA591E626A6DB4900CE59E2 /* HomeViewController.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		ADA591E426A6DB3A00CE59E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591EA26A6DC5D00CE59E2 /* VideoLooperView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +143,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Vitaly Berg";
 				TargetAttributes = {
 					ADA591C426A6D96400CE59E2 = {
 						CreatedOnToolsVersion = 12.3;
@@ -126,7 +175,7 @@
 			files = (
 				ADA591D526A6D96600CE59E2 /* LaunchScreen.storyboard in Resources */,
 				ADA591D226A6D96600CE59E2 /* Assets.xcassets in Resources */,
-				ADA591D026A6D96400CE59E2 /* Main.storyboard in Resources */,
+				ADA591E826A6DB4900CE59E2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA591CD26A6D96400CE59E2 /* ViewController.swift in Sources */,
 				ADA591C926A6D96400CE59E2 /* AppDelegate.swift in Sources */,
-				ADA591CB26A6D96400CE59E2 /* SceneDelegate.swift in Sources */,
+				ADA591E726A6DB4900CE59E2 /* HomeViewController.swift in Sources */,
+				ADA591EB26A6DC5D00CE59E2 /* VideoLooperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADA591CE26A6D96400CE59E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADA591CF26A6D96400CE59E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADA591D326A6D96600CE59E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,10 +334,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sexy.bergusman.Looper;
+				PRODUCT_BUNDLE_IDENTIFIER = sexy.bergusman.looper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,10 +353,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sexy.bergusman.Looper;
+				PRODUCT_BUNDLE_IDENTIFIER = sexy.bergusman.looper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
