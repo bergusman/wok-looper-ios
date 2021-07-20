@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="coinView" destination="3Gf-pY-QOO" id="Obo-Zw-Vao"/>
                 <outlet property="letterView" destination="hOz-wg-Lb2" id="UmQ-t9-YEW"/>
+                <outlet property="segmentedControl" destination="eEt-di-Bxx" id="zbl-dI-0QO"/>
                 <outlet property="topView" destination="t6Z-Od-32G" id="1SE-po-1iB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
