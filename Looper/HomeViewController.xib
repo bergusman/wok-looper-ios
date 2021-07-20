@@ -3,12 +3,16 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Looper" customModuleProvider="target">
             <connections>
+                <outlet property="coinView" destination="3Gf-pY-QOO" id="Obo-Zw-Vao"/>
+                <outlet property="letterView" destination="hOz-wg-Lb2" id="UmQ-t9-YEW"/>
+                <outlet property="topView" destination="t6Z-Od-32G" id="1SE-po-1iB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +20,78 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-di-Bxx" userLabel="Segmented Control">
+                    <rect key="frame" x="24" y="76" width="366" height="32"/>
+                    <segments>
+                        <segment title="Coin"/>
+                        <segment title="Letter"/>
+                        <segment title="Top"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" name="AccentColor"/>
+                    <connections>
+                        <action selector="segmentedControlValueChanged:" destination="-1" eventType="valueChanged" id="9g4-Wn-d9U"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npY-VK-27b" userLabel="Content View">
+                    <rect key="frame" x="57" y="298" width="300" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gf-pY-QOO" userLabel="Coin View" customClass="VideoLooperView" customModule="Looper" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="videoName" value="video_app_coin_grey_01.mp4"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOz-wg-Lb2" userLabel="Letter View" customClass="VideoLooperView" customModule="Looper" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="videoName" value="video_app_letter_grey_01.mp4"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6Z-Od-32G" userLabel="Top View" customClass="VideoLooperView" customModule="Looper" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="videoName" value="video_app_top_grey_01.mp4"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hOz-wg-Lb2" firstAttribute="leading" secondItem="npY-VK-27b" secondAttribute="leading" id="1Xu-5E-ppd"/>
+                        <constraint firstItem="hOz-wg-Lb2" firstAttribute="top" secondItem="npY-VK-27b" secondAttribute="top" id="43B-Q9-P0q"/>
+                        <constraint firstAttribute="trailing" secondItem="hOz-wg-Lb2" secondAttribute="trailing" id="4nf-rX-ef0"/>
+                        <constraint firstItem="3Gf-pY-QOO" firstAttribute="leading" secondItem="npY-VK-27b" secondAttribute="leading" id="5Ql-sl-ppw"/>
+                        <constraint firstAttribute="trailing" secondItem="3Gf-pY-QOO" secondAttribute="trailing" id="J50-Xb-oyx"/>
+                        <constraint firstAttribute="height" constant="300" id="MES-Sq-Ei2"/>
+                        <constraint firstItem="t6Z-Od-32G" firstAttribute="leading" secondItem="npY-VK-27b" secondAttribute="leading" id="MYg-pp-SWM"/>
+                        <constraint firstAttribute="width" constant="300" id="Rcd-4U-B2v"/>
+                        <constraint firstAttribute="bottom" secondItem="t6Z-Od-32G" secondAttribute="bottom" id="Szt-Qc-mhq"/>
+                        <constraint firstItem="t6Z-Od-32G" firstAttribute="top" secondItem="npY-VK-27b" secondAttribute="top" id="gda-GQ-yW7"/>
+                        <constraint firstAttribute="bottom" secondItem="hOz-wg-Lb2" secondAttribute="bottom" id="hE6-RF-JYj"/>
+                        <constraint firstAttribute="trailing" secondItem="t6Z-Od-32G" secondAttribute="trailing" id="siC-Pa-ggZ"/>
+                        <constraint firstItem="3Gf-pY-QOO" firstAttribute="top" secondItem="npY-VK-27b" secondAttribute="top" id="vWF-N1-kxZ"/>
+                        <constraint firstAttribute="bottom" secondItem="3Gf-pY-QOO" secondAttribute="bottom" id="yFE-8c-HK8"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eEt-di-Bxx" secondAttribute="trailing" constant="24" id="GAE-vK-Ms8"/>
+                <constraint firstItem="eEt-di-Bxx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="Jut-bn-bAN"/>
+                <constraint firstItem="npY-VK-27b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jzw-u5-Bhb"/>
+                <constraint firstItem="eEt-di-Bxx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="U8B-sV-9Xl"/>
+                <constraint firstItem="npY-VK-27b" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Y6q-1v-C0g"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="110"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.29411764705882354" green="0.31764705882352939" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -13,6 +13,9 @@
 		ADA591E726A6DB4900CE59E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591E526A6DB4900CE59E2 /* HomeViewController.swift */; };
 		ADA591E826A6DB4900CE59E2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA591E626A6DB4900CE59E2 /* HomeViewController.xib */; };
 		ADA591EB26A6DC5D00CE59E2 /* VideoLooperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA591EA26A6DC5D00CE59E2 /* VideoLooperView.swift */; };
+		ADA591F326A6DF0700CE59E2 /* video_app_top_grey_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ADA591F026A6DF0600CE59E2 /* video_app_top_grey_01.mp4 */; };
+		ADA591F426A6DF0700CE59E2 /* video_app_coin_grey_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ADA591F126A6DF0600CE59E2 /* video_app_coin_grey_01.mp4 */; };
+		ADA591F526A6DF0700CE59E2 /* video_app_letter_grey_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ADA591F226A6DF0700CE59E2 /* video_app_letter_grey_01.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		ADA591E526A6DB4900CE59E2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ADA591E626A6DB4900CE59E2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		ADA591EA26A6DC5D00CE59E2 /* VideoLooperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLooperView.swift; sourceTree = "<group>"; };
+		ADA591F026A6DF0600CE59E2 /* video_app_top_grey_01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_app_top_grey_01.mp4; sourceTree = "<group>"; };
+		ADA591F126A6DF0600CE59E2 /* video_app_coin_grey_01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_app_coin_grey_01.mp4; sourceTree = "<group>"; };
+		ADA591F226A6DF0700CE59E2 /* video_app_letter_grey_01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_app_letter_grey_01.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		ADA591DF26A6DAC700CE59E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ADA591EF26A6DEE600CE59E2 /* Videos */,
 				ADA591D326A6D96600CE59E2 /* LaunchScreen.storyboard */,
 				ADA591D126A6D96600CE59E2 /* Assets.xcassets */,
 			);
@@ -113,6 +120,16 @@
 				ADA591EA26A6DC5D00CE59E2 /* VideoLooperView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		ADA591EF26A6DEE600CE59E2 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				ADA591F126A6DF0600CE59E2 /* video_app_coin_grey_01.mp4 */,
+				ADA591F226A6DF0700CE59E2 /* video_app_letter_grey_01.mp4 */,
+				ADA591F026A6DF0600CE59E2 /* video_app_top_grey_01.mp4 */,
+			);
+			name = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +192,9 @@
 			files = (
 				ADA591D526A6D96600CE59E2 /* LaunchScreen.storyboard in Resources */,
 				ADA591D226A6D96600CE59E2 /* Assets.xcassets in Resources */,
+				ADA591F426A6DF0700CE59E2 /* video_app_coin_grey_01.mp4 in Resources */,
+				ADA591F526A6DF0700CE59E2 /* video_app_letter_grey_01.mp4 in Resources */,
+				ADA591F326A6DF0700CE59E2 /* video_app_top_grey_01.mp4 in Resources */,
 				ADA591E826A6DB4900CE59E2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
